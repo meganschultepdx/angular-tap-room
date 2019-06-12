@@ -1,14 +1,22 @@
 <div>
   <h3>Pick yo' Poisonnnn Grrrl</h3>
+
+  <div class="parallax-container">
+      <div class="parallax">
+        <img src="../../assets/panda.jpeg"></div>
+    </div>
+    
   <ul>
+    <hr>
     <div *ngFor="let keg of kegs">
-      <li (click)="selectKeg(keg)">{{keg.name}}</li>
+      <li id="kegName" (click)="selectKeg(keg)">{{keg.name}}</li>
         <ul *ngIf="keg === selectedKeg">
           <li>{{keg.brand}}</li>
           <li>{{keg.style}}</li>
           <li>Pint: $ {{keg.price}}</li>
           <li>ABV: {{keg.abv}}%</li>
         </ul>
+        <hr>
     </div>
   </ul>
 </div>

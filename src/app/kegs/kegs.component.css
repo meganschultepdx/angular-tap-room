@@ -1,3 +1,8 @@
-keginfo {
-    
+hr {
+    width: 20%;
+}
+
+#kegName {
+    font-size: 30px;
+    color: rgb(39, 156, 172);
 }
