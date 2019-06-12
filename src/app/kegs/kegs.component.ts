@@ -23,12 +23,12 @@ export class KegsComponent implements OnInit {
   ]
 
   selectedKeg: null;
-
-  toggleDetails(keg) {
-    if (this.selectedKeg === null) {
-      this.selectedKeg = keg
+  
+  selectKeg(keg){
+    if (this.selectedKeg === keg) {
+      this.selectedKeg = null;
     } else {
-      this.selectedKeg = null
+      this.selectedKeg = keg;
     }
   }
 }

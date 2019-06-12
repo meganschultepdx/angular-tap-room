@@ -2,11 +2,11 @@
   <h3>Pick yo' Poisonnnn Grrrl</h3>
   <ul>
     <div *ngFor="let keg of kegs">
-      <li (click)="toggleDetails(keg)">{{keg.name}}</li>
-        <ul *ngIf="selectedKeg">
+      <li (click)="selectKeg(keg)">{{keg.name}}</li>
+        <ul *ngIf="keg === selectedKeg">
           <li>{{keg.brand}}</li>
           <li>{{keg.style}}</li>
-          <li>Pint: ${{keg.price}}</li>
+          <li>Pint: $ {{keg.price}}</li>
           <li>ABV: {{keg.abv}}%</li>
         </ul>
     </div>
