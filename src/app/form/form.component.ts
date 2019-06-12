@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Keg } from '../models/keg.model'
 
 @Component({
   selector: 'app-form',

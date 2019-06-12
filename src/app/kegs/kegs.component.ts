@@ -23,6 +23,7 @@ export class KegsComponent implements OnInit {
   ]
 
   selectedKeg: null;
+  anotherKeg = {};
   
   selectKeg(keg){
     if (this.selectedKeg === keg) {
@@ -31,4 +32,10 @@ export class KegsComponent implements OnInit {
       this.selectedKeg = keg;
     }
   }
+
+  newKeg(name, brand, style, price, ABV) {
+    let anotherKeg = new Keg(name, brand, style, price, ABV)
+    this.kegs.push(anotherKeg)
+  }
+
 }

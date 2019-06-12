@@ -5,6 +5,7 @@ import { KegsComponent } from './kegs/kegs.component';
 import { FormComponent } from './form/form.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { FormsModule } from '@angular/forms';
 import 'materialize-css';
 
 
@@ -17,7 +18,8 @@ import 'materialize-css';
     FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
