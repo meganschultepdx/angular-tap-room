@@ -1,3 +1,5 @@
+// home page 'view'
+
 import { Component } from '@angular/core';
 
 @Component({
