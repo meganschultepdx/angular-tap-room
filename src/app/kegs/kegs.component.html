@@ -11,7 +11,7 @@
     
   <ul>
     <hr>
-    <div *ngFor="let keg of kegs">
+    <div *ngFor="let keg of childKegs">
       <li id="kegName" (click)="selectKeg(keg)">{{keg.name}}</li>
         <ul *ngIf="keg === selectedKeg">
           <li>{{keg.brand}}</li>

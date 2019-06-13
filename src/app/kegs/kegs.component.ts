@@ -1,6 +1,6 @@
 // See what happends when you delete OnInit and ngOnInit
 
-import { Component, Input, Output} from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Keg } from '../models/keg.model';
 // import { $ } from 'protractor';
 
