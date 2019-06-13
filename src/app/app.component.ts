@@ -1,6 +1,6 @@
 // home page 'view'
-import { Keg } from './models/keg.model'
 import { Component } from '@angular/core';
+import { Keg } from './models/keg.model'
 
 @Component({
   selector: 'app-root',
@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  selectedKeg = null;
 
   masterKegs: Keg[] = [
     new Keg('Black Butte', 'Deschutes', 'Porter', 6, 5.2),
@@ -20,6 +21,9 @@ export class AppComponent {
 
   addKeg(anotherKeg: Keg) {
     this.masterKegs.push(anotherKeg);
+  }
 
+  editKeg(clickedKeg) {
+    this.selectedKeg = clickedKeg;
   }
 }

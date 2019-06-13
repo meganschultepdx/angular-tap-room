@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import 'materialize-css';
+import { EditKegComponent } from './edit-keg/edit-keg.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import 'materialize-css';
     KegsComponent,
     FormComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    EditKegComponent
   ],
   imports: [
     BrowserModule,

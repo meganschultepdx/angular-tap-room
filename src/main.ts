@@ -11,6 +11,7 @@ if (environment.production) {
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
 
-  $(document).ready(function(){
-    $('.parallax').parallax();
-  });
+
+// $(document).ready(function () {
+//   $('.parallax').parallax();
+// });

@@ -8,5 +8,7 @@
 
   <app-form (sendKeg)="addKeg($event)"></app-form>
 
+  <app-edit-keg [childSelectedKegs]="selectedKeg" (doneButtonClickedSender)="finishedEditing()"></app-edit-keg>
+
 </div>
 
