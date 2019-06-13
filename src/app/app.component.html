@@ -4,7 +4,9 @@
     Welcome to Taproom AF!
   </h1>
 
-  <app-kegs></app-kegs>
-  <app-form></app-form>
+  <app-kegs [childKegs]="masterKegs"></app-kegs>
+
+  <app-form (sendKeg)="newKeg($event)"></app-form>
+
 </div>
 

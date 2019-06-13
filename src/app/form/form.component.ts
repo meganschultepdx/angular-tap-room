@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter  } from '@angular/core';
 import { Keg } from '../models/keg.model'
 
 @Component({
@@ -6,11 +6,12 @@ import { Keg } from '../models/keg.model'
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })
-export class FormComponent implements OnInit {
+export class FormComponent {
+  @Output() sendKeg = new EventEmitter();
 
-  constructor() { }
 
-  ngOnInit() {
+  newKeg(name: string, brand: string, style: string, price: number, abv: number) {
+    let anotherKeg = new Keg(name, brand, style, price, abv)
+    this.sendKeg.emit(anotherKeg);
   }
-
 }
