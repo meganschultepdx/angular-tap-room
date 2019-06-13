@@ -2,7 +2,7 @@
 
 import { Component, Input } from '@angular/core';
 import { Keg } from '../models/keg.model';
-// import { $ } from 'protractor';
+import { $ } from 'protractor';
 
 @Component({
   selector: 'app-kegs',

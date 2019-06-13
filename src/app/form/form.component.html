@@ -5,31 +5,31 @@
       <div class="card-content">
         <span class="card-title">Enter A New Brew</span>
         <div class="input-field col s12">
-          <input #name>
-          <label for="brewName">Name of Brew:</label>
+          <input #name placeholder="Name of Brew:" >
+          <label class="active" for="brewName">Name of Brew</label>
         </div>
 
         <div class="row">
           <div class="input-field col s6">
-            <input #brand>
-            <label for="brand">Brand:</label>
+            <input #brand placeholder="Brand:" >
+            <label class="active" for="brand">Brand</label>
           </div>
 
           <div class="input-field col s6">
-            <input #style>
-            <label for="style">Style</label>
+            <input #style placeholder="Style:" >
+            <label class="active" for="style">Style</label>
           </div>
         </div>
 
         <div class="row">
           <div class="input-field col s6">
-            <input #price>
-            <label for="price">Price</label>
+            <input #price placeholder="$ Price" type="number">
+            <label class="active" for="price">Price</label>
           </div>
 
           <div class="input-field col s6">
-            <input #abv>
-            <label for="abv">ABV %</label>
+            <input #abv placeholder="ABV %" type="number">
+            <label class="active" for="abv">ABV %</label>
           </div>
         </div>
       </div>
